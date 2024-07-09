@@ -1,0 +1,20 @@
+package com.tns.constructors;
+import java.util.Scanner;
+public class Customerdemo {
+public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter your name:");
+	String name=sc.nextLine();
+	System.out.println("enter your cid:");
+	int id=sc.nextInt();
+	System.out.println("enter your caddress:");
+	String add=sc.next();
+	Customer c=new Customer();
+	c.setCname("name");
+	c.setCaddress(add);
+	c.setCid(id);
+	System.out.println(c);
+	boolean out=c instanceof Customer;
+	System.out.println(out);
+}
+}
